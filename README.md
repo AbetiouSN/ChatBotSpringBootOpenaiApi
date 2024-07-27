@@ -1,44 +1,38 @@
 # ChatBotSpringBootOpenaiApi
-# Chatbot Spring Boot avec OpenAI API
-
 
 ## Description
-Ce projet est un chatbot développé en utilisant Spring Boot et l'API OpenAI. Il permet aux utilisateurs d'interagir avec un chatbot intelligent capable de comprendre et de répondre à des questions sur une variété de sujets. L'application utilise le modèle de langage GPT-3.5-turbo d'OpenAI pour générer des réponses pertinentes et contextuelles.
+This project is a chatbot developed using Spring Boot and the OpenAI API. It allows users to interact with an intelligent chatbot capable of understanding and responding to questions on a variety of topics. The application uses OpenAI's GPT-3.5-turbo language model to generate relevant and contextual responses.
 
-## Fonctionnalités
-- Intégration avec l'API OpenAI pour générer des réponses.
-- Gestion des requêtes et des réponses via des contrôleurs Spring Boot.
-- Modèles de données pour structurer les messages et les réponses.
-- Gestion des erreurs pour les requêtes excessives à l'API OpenAI.
+## Features
+- Integration with the OpenAI API to generate responses.
+- Management of requests and responses via Spring Boot controllers.
+- Data models to structure messages and responses.
+- Error handling for excessive requests to the OpenAI API.
 
-## Structure du Projet
-Le projet est organisé comme suit :
+## Project Structure
+The project is organized as follows:
 
-# Controller
-MainController : Gère les requêtes HTTP entrantes et interagit avec le service pour traiter les demandes du chatbot.
+### Controller
+- `MainController`: Handles incoming HTTP requests and interacts with the service to process chatbot requests.
 
-# Models
-- ChatCompletionRequest : Représente la structure de la requête envoyée à l'API OpenAI pour générer des réponses.
-- ChatCompletionResponse : Représente la structure de la réponse reçue de l'API OpenAI.
-- ChatMessage : Encapsule les messages de chat individuels échangés entre l'utilisateur et le chatbot.
-- ChatbotSpringApplication : Le point d'entrée principal de l'application Spring Boot.
+### Models
+- `ChatCompletionRequest`: Represents the structure of the request sent to the OpenAI API to generate responses.
+- `ChatCompletionResponse`: Represents the structure of the response received from the OpenAI API.
+- `ChatMessage`: Encapsulates individual chat messages exchanged between the user and the chatbot.
+- `ChatbotSpringApplication`: The main entry point of the Spring Boot application.
 
 ## Installation
 
-1. Clonez le dépôt :
+1. Clone the repository:
    ```bash
-   git clone https://github.com/votre-utilisateur/ChatBotSpringBootOpenaiApi.git
+   git clone https://github.com/your-username/ChatBotSpringBootOpenaiApi.git
    cd ChatBotSpringBootOpenaiApi
-
-2. Configurer la clé API OpenAI :
-    Ouvrez application.properties situé dans src/main/resources.
-    Ajoutez votre clé API OpenAI :
-    * openai.api.key=your_openai_api_key
-
-## Utilisation 
-    1. URL : POST http://localhost:8080/chatbot
-    2. request JSON : 
-     {
-       "prompt":"Question"
-     }
-
+2. Configure the OpenAI API key:
+   Open application.properties located in src/main/resources. Add your OpenAI API key:
+   openai.api.key=your_openai_api_key
+## Usage
+   - URL: POST http://localhost:8080/chatbot
+   - Request JSON:
+    {
+       "prompt": "Question"
+    }
