@@ -36,8 +36,8 @@ MainController : Gère les requêtes HTTP entrantes et interagit avec le service
     * openai.api.key=your_openai_api_key
 
 ## Utilisation 
-    * URL : POST http://localhost:8080/chatbot
-    * request JSON : 
+    1. URL : POST http://localhost:8080/chatbot
+    2. request JSON : 
      {
        "prompt":"Question"
      }
