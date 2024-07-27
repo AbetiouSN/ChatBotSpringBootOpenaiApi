@@ -35,7 +35,7 @@ MainController : Gère les requêtes HTTP entrantes et interagit avec le service
     Ajoutez votre clé API OpenAI :
     * openai.api.key=your_openai_api_key
 
-## Utilisation :
+## Utilisation 
     * URL : POST http://localhost:8080/chatbot
     * request JSON : 
      {
